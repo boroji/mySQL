@@ -1,8 +1,10 @@
 <?php include "includes/db.php" ?>
 <?php include "includes/create.php" ?>
 <?php include "includes/read.php" ?>
+<?php include "includes/update.php" ?>
 
 <?php createData(); ?>
+<?php updateData(); ?>
 
 <?php include "includes/header.php" ?>
 
@@ -19,7 +21,7 @@
                     <input class="form-control" type="password" name="password" id="password">
                 </div>
                 <div class="form-group">
-                    <select class="custom-select" name="myUsername" >
+                    <select class="custom-select" name="id" >
                         <?php showData(); ?>
                     </select>
                 </div>

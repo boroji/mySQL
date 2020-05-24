@@ -4,7 +4,7 @@
 function readData() {
     global $connection;
 
-    if (isset($_POST['update'])) {
+    if (isset($_POST['read'])) {
 
         $user = $_POST['username'];
         $pass = $_POST['password'];
