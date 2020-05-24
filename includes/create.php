@@ -12,6 +12,12 @@ function createData() {
         $user = mysqli_real_escape_string($connection, $user);
         $pass = mysqli_real_escape_string($connection, $pass);
 
+        $hash = "$2y$10$";
+        $salt = "LetsWrite22Characterzz";
+        $hash_salt = $hash . $salt;
+
+        $pass = crypt($pass, $hash_salt);
+
         $query = "INSERT INTO myusers(myUsername, myPassword) VALUES ('$user','$pass') ";
         $result = mysqli_query($connection, $query);
 
