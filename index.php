@@ -1,5 +1,5 @@
 <?php include "includes/header.php" ?>
-
+<?php include "includes/db.php" ?>
 
 <div class="wrapper">
     <div class="container">
@@ -20,6 +20,7 @@
                         <input class="btn btn-success mb-3 mr-lg-3 mr-lg-0" type="submit" name="update" value="Update">
                         <input class="btn btn-danger mb-3 mr-lg-3 mr-lg-0" type="submit" name="delete" value="Delete">
                     </div>
+                    
                 </form>
             </div>
         </div>
