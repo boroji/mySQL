@@ -1,5 +1,9 @@
-<?php include "includes/header.php" ?>
 <?php include "includes/db.php" ?>
+<?php include "includes/create.php" ?>
+
+<?php createData(); ?>
+
+<?php include "includes/header.php" ?>
 
 <div class="wrapper">
     <div class="container">
