@@ -18,6 +18,11 @@
                     <label for="password">Password</label>
                     <input class="form-control" type="password" name="password" id="password">
                 </div>
+                <div class="form-group">
+                    <select class="custom-select" name="myUsername" >
+                        <?php showData(); ?>
+                    </select>
+                </div>
                 <div class="form-group d-flex flex-column flex-lg-row">
                     <input class="btn btn-primary mb-3 mr-lg-3 mr-lg-0" type="submit" name="create" value="Create">
                     <input class="btn btn-secondary mb-3 mr-lg-3 mr-lg-0" type="submit" name="read" value="Read">
