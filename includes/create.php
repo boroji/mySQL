@@ -9,6 +9,9 @@ function createData() {
         $user = $_POST['username'];
         $pass = $_POST['password'];
 
+        $user = mysqli_real_escape_string($connection, $user);
+        $pass = mysqli_real_escape_string($connection, $pass);
+
         $query = "INSERT INTO myusers(myUsername, myPassword) VALUES ('$user','$pass') ";
         $result = mysqli_query($connection, $query);
 
@@ -40,7 +43,7 @@ function createData() {
                 echo
                     "
                 <div class='alert alert-success alert-dismissible fade show' role='alert'>
-                    Username and Password successfully entered
+                    Cannot create data, please enter data without special characters
                     <button type='button' class='close' data-dismiss='alert' aria-label='Close'>
                         <span aria-hidden='true'>&times;</span>
                     </button>

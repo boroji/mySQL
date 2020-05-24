@@ -8,6 +8,11 @@ function deleteData() {
 
         $user = $_POST['username'];
         $pass = $_POST['password'];
+
+        $user = mysqli_real_escape_string($connection, $user);
+        $pass = mysqli_real_escape_string($connection, $pass);
+
+        
         $id = $_POST['id'];
 
         $query = "DELETE FROM myusers WHERE myUsername = '$id' ";

@@ -9,6 +9,9 @@ function readData() {
         $user = $_POST['username'];
         $pass = $_POST['password'];
 
+        $user = mysqli_real_escape_string($connection, $user);
+        $pass = mysqli_real_escape_string($connection, $pass);
+
         $query = "SELECT * FROM myusers ";
         $result = mysqli_query($connection, $query);
 

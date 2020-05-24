@@ -8,6 +8,10 @@ function updateData() {
 
         $user = $_POST['username'];
         $pass = $_POST['password'];
+
+        $user = mysqli_real_escape_string($connection, $user);
+        $pass = mysqli_real_escape_string($connection, $pass);
+        
         $id = $_POST['id'];
 
         $query = "UPDATE myusers SET myUsername = '$user', myPassword = '$pass' WHERE myUsername = '$id' ";
