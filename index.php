@@ -2,9 +2,11 @@
 <?php include "includes/create.php" ?>
 <?php include "includes/read.php" ?>
 <?php include "includes/update.php" ?>
+<?php include "includes/delete.php" ?>
 
 <?php createData(); ?>
 <?php updateData(); ?>
+<?php deleteData(); ?>
 
 <?php include "includes/header.php" ?>
 
